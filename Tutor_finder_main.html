@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {margin:0;height:2000px;}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+</style>
+  <style>
+  .dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#E6E6FA;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: grey;
+}
+  </style>
+
+  <style type="text/css">
+
+    .write{
+
+      font-size: 22px;
+/*            background-color:grey;*/
+             color: white;
+    }
+      
+
+  </style>
+<script type="text/javascript">
+//script for typed
+string="About Us"+"<br>"+"We help eager learners to get the best faculty possible";
+  $(function(){
+
+        $(".write").typed({
+
+            strings: [string],
+
+            typeSpeed: 1,
+
+        });
+
+    });
+
+</script>
+
+ 
+
+</head>
+<body onload="typeWriter()">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Tutor Finder</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      
+               <div class="dropdown">
+              <button class="dropbtn">Subjects</button>
+               <div class="dropdown-content">
+                   <a href="#">Hi 1</a>
+                   <a href="#">Hi 2</a>
+                   <a href="#">Hi 3</a>
+                </div>
+               </div> 
+
+               <div class="dropdown">
+                  <button class="dropbtn">Teachers</button>
+                  <div class="dropdown-content">
+                    <a href="#">Hi1</a>
+                    <a href="#">Hi2</a>
+                    <a href="#">Hi3</a>
+                </div>
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+              <div class="dropdown">
+                  <button class="dropbtn"><span class="glyphicon glyphicon-user"></span>signup</button>
+                   <div class="dropdown-content">
+                       <a href="#">Hi 1</a>
+                       <a href="#">Hi 2</a>
+                       <a href="#">Hi 3</a>
+                    </div>
+                   </div> 
+               <div class="dropdown">
+                      <button class="dropbtn"><span class="glyphicon glyphicon-log-in"></span>Login</button>
+                       <div class="dropdown-content">
+                           <a href="#">Hi 1</a>
+                           <a href="#">Hi 2</a>
+                           <a href="#">Hi 3</a>
+                        </div>
+               </div> 
+       </ul>
+
+  </div>
+</nav>
+  
+ <div align="center">
+    <form action="/action_page.php">
+      <div class="form-group">
+        <input type="text" onfocus="this.value='hi'class="form-control" placeholder="Search">
+      <button type="submit" class="btn btn-default">Submit</button></div>
+    </form>
+ </div>
+<div container>
+ <div class="col-sm-3" style="background-color:lavender;  " ></div>
+    <div class="col-sm-3" style="background-color: black ;border: solid 3px powderblue" > 
+
+                        <span class="write"></span>
+     </div>
+    <div class="col-sm-3" >.col-sm-4</div>  
+     <div class="col-sm-3" style="background-color:lavender;"></div>
+          <div class="col-sm-3" style="background-color:lavender;"></div>
+     <div class="col-sm-3" style="background-color:lavender;"></div>
+
+</div>
+
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
+<div>helloooo</div>
+
+</body>
+</html>
